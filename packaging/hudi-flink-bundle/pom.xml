@@ -172,6 +172,9 @@
                 <relocation>
                   <pattern>org.apache.avro.</pattern>
                   <shadedPattern>${flink.bundle.shade.prefix}org.apache.avro.</shadedPattern>
+                  <excludes>
+                    <exclude>org.apache.avro.util.Utf8</exclude>
+                  </excludes>
                 </relocation>
                 <relocation>
                   <pattern>org.apache.commons.io.</pattern>
